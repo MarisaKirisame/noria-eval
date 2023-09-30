@@ -1,1 +1,1 @@
-docker create zookeeper
+docker run -d --name noria-eval zookeeper
