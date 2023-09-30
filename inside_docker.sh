@@ -1,3 +1,4 @@
-apt install git
+apt-get upgrade
+apt-get install git
 git clone git@github.com:MarisaKirisame/noria.git
 meow
