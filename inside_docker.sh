@@ -3,7 +3,7 @@ set -e
 
 apt-get update
 apt-get upgrade -y
-apt-get install -y git ssh-client
+apt-get install -y git ssh-client build-essential
 
 cat ~/.ssh/id_rsa.pub || ssh-keygen -t rsa -q -f "$HOME/.ssh/id_rsa" -N ""
 
