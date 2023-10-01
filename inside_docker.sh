@@ -3,7 +3,7 @@ set -e
 
 apt-get update
 apt-get upgrade -y
-apt-get install -y git ssh-client build-essential pkg-config libssl-dev clang
+apt-get install -y git ssh-client build-essential pkg-config libssl-dev clang libclang-dev
 
 cat ~/.ssh/id_rsa.pub || ssh-keygen -t rsa -q -f "$HOME/.ssh/id_rsa" -N ""
 
