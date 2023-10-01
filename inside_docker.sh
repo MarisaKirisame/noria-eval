@@ -10,4 +10,8 @@ cat ~/.ssh/id_rsa.pub || ssh-keygen -t rsa -q -f "$HOME/.ssh/id_rsa" -N ""
 rm -rf noria || true # rust does not track C++ ffi correctly and git submodule suck. just recompile everytime.
 git clone https://github.com/MarisaKirisame/noria.git
 
+cd noria
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+cargo check
+
 meow
