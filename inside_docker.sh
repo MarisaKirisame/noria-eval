@@ -12,6 +12,7 @@ git clone https://github.com/MarisaKirisame/noria.git
 
 cd noria
 cargo || (curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y)
+source "$HOME/.cargo/env"
 cargo check
 
 meow
