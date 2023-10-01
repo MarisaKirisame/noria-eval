@@ -11,7 +11,7 @@ rm -rf noria || true # rust does not track C++ ffi correctly and git submodule s
 git clone https://github.com/MarisaKirisame/noria.git
 
 cd noria
-curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+(curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh) | yes
 cargo check
 
 meow
