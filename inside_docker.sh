@@ -1,4 +1,5 @@
 set -x
+set -e
 
 apt-get update
 apt-get upgrade -y
