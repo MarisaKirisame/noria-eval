@@ -11,7 +11,7 @@ rm -rf noria || true # rust does not track C++ ffi correctly and git submodule s
 git clone https://github.com/MarisaKirisame/noria.git
 
 cd noria
-git clone --recursive git@github.com:WtzLAS/zombie-sys.git
+git clone --recursive https://github.com/WtzLAS/zombie-sys.git
 cargo || (curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y)
 source "$HOME/.cargo/env"
 cargo check
