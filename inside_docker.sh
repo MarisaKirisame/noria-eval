@@ -17,3 +17,6 @@ git clone --recursive https://github.com/WtzLAS/zombie-sys.git
 cargo || (curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y)
 source "$HOME/.cargo/env"
 cargo check
+
+python3 eval.py
+python3 report.py
