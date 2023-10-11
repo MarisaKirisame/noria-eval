@@ -3,7 +3,9 @@ set -e
 
 apt-get update
 apt-get upgrade -y
-apt-get install -y git ssh-client build-essential pkg-config libssl-dev clang libclang-dev
+apt-get install -y git ssh-client build-essential pkg-config libssl-dev clang libclang-dev python3-pip
+
+pip install dominate
 
 cat ~/.ssh/id_rsa.pub || ssh-keygen -t rsa -q -f "$HOME/.ssh/id_rsa" -N ""
 
@@ -15,5 +17,3 @@ git clone --recursive https://github.com/WtzLAS/zombie-sys.git
 cargo || (curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y)
 source "$HOME/.cargo/env"
 cargo check
-
-meow
