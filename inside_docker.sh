@@ -3,7 +3,7 @@ set -e
 
 apt-get update
 apt-get upgrade -y
-apt-get install -y git ssh-client build-essential pkg-config libssl-dev clang libclang-dev python3-pip
+apt-get install -y git ssh-client build-essential pkg-config libssl-dev clang libclang-dev python3-pip python3-matplotlib
 
 pip install dominate
 
